@@ -1,7 +1,23 @@
 aid: mindsay
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mindsay.png
 name: Mindsay
-description: 'Mindsay is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: AI/ML. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Mindsay (formerly Destygo) was a Paris-based conversational AI platform that
+  built chatbot and virtual-assistant automation for customer service and support teams, with a
+  focus on travel and hospitality use cases. It was surfaced as a portfolio company of Partech and
+  added to the API Evangelist network. As of this enrichment pass the standalone mindsay.com brand
+  is no longer serving a live site or developer surface (the company was acquired by Laivly), so no
+  public API, developer portal, or documentation could be located to profile.'
 url: https://raw.githubusercontent.com/api-evangelist/mindsay/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +27,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Ai/Ml
+- Conversational AI
+- Chatbots
+- Customer Service
+- Automation
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +42,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/mindsay-domain-security.yml
 - type: Website
   url: https://www.mindsay.com/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
